@@ -102,20 +102,115 @@ section.banner p a.botao {
 /*==========================================================
                           SECTION.PRODUCTS
 ==========================================================*/
-section.products {
+main section.products {
     background-color: #CBE4DE;
+    padding: 1.5vw 0 0 0;
 }
-section.products div.our {
-    text-align: center;
-}
-div.our h2 {
+main section.products h2 {
     font-size: 2rem;
+    text-align: center;
+    margin: 0 0 1.5vw 0;
+}
+main section.products p.prc {
+    text-align: center;
+    margin: 0 34vw;
+    color: #888888;
+}
+main section.products p {
+    color: #888888;
+    font-size: small;
+    margin: 0 4vw;
+}
+main section.products ul {  
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+}
+main section.products ul li {
+    width: 21%;
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 20px;
+    margin: 1vw;
+    padding: 1vw;
+}
+main section.products ul li i {
+    font-size: 2.3rem;
+    color: #888888;
+    background-color: #EFEFEF;
+    border-radius: 100px;
+    padding: 1vw;
 
 }
-section.products ul {
-    flex-wrap: wrap;
-    display: flex;
+main section.products ul li h3 {
+    margin: 1vw 0 1vw 0;
 }
-section.products ul li {
-    width: 30%;
+main section.products ul li.esquerda {
+    margin: 1vw 1vw 1vw 9vw;
+}
+main section.products ul li.direita {
+    margin: 1vw 9vw 1vw 1vw;
+}
+/*==========================================================
+                          SECTION.BUILD
+==========================================================*/
+.build {
+    text-align: center;
+}
+.build div.maior {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 5vw 0;
+}
+.build div.um {
+
+}
+.build div.dois {
+    padding: 6vw 0 0 3vw;
+    text-align: left;
+}
+.build div.titulo {
+    margin: 6vw 0 0 0;
+}
+.build div.titulo h2 {
+    font-size: 2rem;
+}
+.build div.titulo p.ump {
+    color: #888888;
+    margin: 1vw 33vw;
+}
+.build div.dois p.doisp {
+    font-size: 1.2rem;
+
+}
+.build div.dois p.tresp {
+    color: #888888 ;
+    margin: 1vw 0 0 0;;
+}  
+/*==========================================================
+                          SECTION.FOOTER
+==========================================================*/
+footer {
+    background-color: #CBE4DE;
+    display: flex;
+    justify-content: space-around;
+    padding: 1vw;
+}
+footer p span {
+    color: #000000;
+    font-size: 1.2rem;
+}
+footer p {
+    color: #888888;
+    font-size: small;
+}
+footer ul {
+    display: flex;
+    margin: 0 3vw 0 3vw;
+
+}
+footer ul li a {
+    margin: 0 1vw;
+    color: #888888;
+    font-size: small;
 }
