@@ -99,34 +99,38 @@ section.banner p {
 section.banner p a.botao {
     background-color: #0E8388;
 }
+section.banner img {
+    width: 80%;
+    max-width: 800px;
+}
 /*==========================================================
                           SECTION.PRODUCTS
 ==========================================================*/
-main section.products {
+section.products {
     background-color: #CBE4DE;
     padding: 1.5vw 0 0 0;
 }
-main section.products h2 {
+section.products h2 {
     font-size: 2rem;
     text-align: center;
     margin: 0 0 1.5vw 0;
 }
-main section.products p.prc {
+section.products p.prc {
     text-align: center;
     margin: 0 34vw;
     color: #888888;
 }
-main section.products p {
+section.products p {
     color: #888888;
     font-size: small;
     margin: 0 4vw;
 }
-main section.products ul {  
+section.products ul {  
     display: flex;
     flex-wrap: wrap;
    justify-content: center;
 }
-main section.products ul li {
+section.products ul li {
     width: 21%;
     text-align: center;
     background-color: #fafafa;
@@ -134,7 +138,7 @@ main section.products ul li {
     margin: 1vw;
     padding: 1vw;
 }
-main section.products ul li i {
+section.products ul li i {
     font-size: 2.3rem;
     color: #888888;
     background-color: #EFEFEF;
@@ -142,14 +146,8 @@ main section.products ul li i {
     padding: 1vw;
 
 }
-main section.products ul li h3 {
+section.products ul li h3 {
     margin: 1vw 0 1vw 0;
-}
-main section.products ul li.esquerda {
-    margin: 1vw 1vw 1vw 9vw;
-}
-main section.products ul li.direita {
-    margin: 1vw 9vw 1vw 1vw;
 }
 /*==========================================================
                           SECTION.BUILD
@@ -214,3 +212,92 @@ footer ul li a {
     color: #888888;
     font-size: small;
 }
+/*==========================================================
+                        Responsivo
+==========================================================*/
+@media (max-width: 600px) {
+    header {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li {
+        width: 40%;
+        margin: 2vw;
+    }
+    header nav ul {
+        flex-wrap: wrap;
+        margin: 1.5vw;
+        justify-content: center;
+    }
+    header a h1 {
+        margin: 3vw;
+    }   
+    section.products ul li {
+        width: 70%;
+        margin: 2.5vw auto 2.5vw auto;
+
+    }
+    section.products h2 {
+        font-size: 2rem;
+    }
+    section.products ul {
+        display: block;
+    }
+    .build div.maior {
+        display: block;
+        margin: 0 0 4vw 0;
+    }
+    .build img {
+        margin: 10px; 
+        width: 80%;
+    }
+
+    .build div.maior {
+        padding: 4vw 0 0 0;
+        text-align: center;
+    }
+
+    .build div.titulo h2 {
+        font-size: 1.5rem;
+    }
+
+    .build div.titulo p.ump {
+        margin: 1vw 20vw;
+    }
+
+    .build div.dois p.doisp {
+        font-size: 1rem; 
+        text-align: center;
+    }
+
+    .build div.dois p.tresp {
+        margin: 1vw 0 0 0;
+        text-align: center;
+    }
+    footer {
+        display: block;
+        text-align: center; 
+        padding: 4vw 2vw; 
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        text-align: center; 
+        margin: 1vw 0; 
+    }
+
+    footer p span {
+        font-size: 1rem;
+    }
+
+    footer ul {
+        display: block; 
+        margin: 0;
+        align-items: center; 
+    }
+
+    footer ul li a {
+        margin: 1vw 0;
+        font-size: 1rem;
+    }
+  }
